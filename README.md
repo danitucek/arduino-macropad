@@ -2,7 +2,7 @@
 
 I work as a system engineer, I have admin credentials via Active Directory to use with every server I need to login. I just enter my credentials and I am allowed to diagnose and work on that particular server... Only if it was so easy and I wouldn't need to alter the login credentials for each type of server, whether it's a Dell, HP or a Supermicro.
 
-Dell iDRACs use a form where you type in your credentials in an e-mail address manner: 'your.login@domain'
+Dell iDRACs use a form where you type in your credentials in an e-mail address manner: 'your.login@domain'  
 HP iLOs on the other hand anticipate them in a Windows manner: `domain\your.login`
 You get the point...
 
