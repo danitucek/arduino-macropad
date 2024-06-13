@@ -3,7 +3,7 @@
 I work as a system engineer, I have admin credentials via Active Directory to use with every server I need to login. I just enter my credentials and I am allowed to diagnose and work on that particular server... Only if it was so easy and I wouldn't need to alter the login credentials for each type of server, whether it's a Dell, HP or a Supermicro.
 
 Dell iDRACs use a form where you type in your credentials in an e-mail address manner: 'your.login@domain'  
-HP iLOs on the other hand anticipate them in a Windows manner: `domain\your.login`
+HP iLOs on the other hand anticipate them in a Windows manner: `domain\your.login`  
 You get the point...
 
 I started pulling my hair out after a while since I manage almost 1000 individual servers and typing in the correct form is tiresome. Therefore I created this little macropad which allows me to input my AD credentials in a correct for by the convenience of a single keypress.
