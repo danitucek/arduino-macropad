@@ -10,7 +10,7 @@ I started pulling my hair out after a while since I manage almost 1000 individua
 
 ## Hardware ##
 
-Arduino is a convenient 8-bit MCU the suits as the brains of this project. I chose the Arduino Pro Micro as the base due to its design allowing it to be used as an emulated keyboard, therefore any computer (PC, Mac, Linux, ...) detects it as a standard keyboard, no need for drivers. The Atmega 32u4 is directly connected to the USB port and emulates the virtual keyboard. I used the version with Type-C USB connector for future proof convenience.
+Arduino is a convenient 8-bit MCU that suits as the brains of this project. I chose the Arduino Pro Micro as the base due to its design allowing it to be used as an emulated keyboard, therefore any computer (PC, Mac, Linux, ...) detects it as a standard keyboard, no need for drivers. The ATmega32u4 is directly connected to the USB port and emulates the virtual keyboard. I used the version with Type-C USB connector for future proof convenience.
 
 The physical part consists of simple pushbuttons set in INPUT_PULLUP mode so we don't have to use resistors, another great Arduino feature. In this first version I used 3 pushbuttons for three different actions:
 - Key 1 -> type in login for iDRAC
