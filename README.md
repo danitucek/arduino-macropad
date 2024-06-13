@@ -18,6 +18,8 @@ The physical part consists of simple pushbuttons set in INPUT_PULLUP mode so we 
 - Key 3 -> a simple lock button that simulates pressing WIN+L
 A simple red LED was added just for a visual feedback of the device functioning, this can be omitted completely or swapped for anything else with a cool factor (might add an OLED screen later with company logos when pressing the key).
 
+![Schematic diagram](/img/circuit.png)
+
 ## Software ##
 
 I wanted to keep my code simple and easy to modify. The USB Keyboard library is available from Arduino and is included in the Arduino IDE. The code operates on observing the reverse logic of the pushbuttons, INPUT_PULLUP mode keeps an active HIGH (logical 1) internally on each pushbutton. When you press the button it shorts the digital pin to ground, creating an active LOW (logical 0). That's when we want to take action. Two of the three buttons input a string, this is done by `Keyboard.print("textHere")` (you can use `.println()` to apply and ENTER at the end). The third one is trickier since we want to use an exact hardware key and a letter, this is done by `Keyboard.press()` and `.print()`. Using `.press()` you must input the name (or hex/bin code) of your selected modifier key from the [Arduino Key Reference List](https://www.arduino.cc/reference/en/language/functions/usb/keyboard/keyboardmodifiers/).
