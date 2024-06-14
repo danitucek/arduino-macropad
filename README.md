@@ -15,7 +15,7 @@ Arduino is a convenient 8-bit MCU that suits as the brains of this project. I ch
 The physical part consists of simple pushbuttons set in INPUT_PULLUP mode so we don't have to use resistors, another great Arduino feature. In this first version I used 3 pushbuttons for three different actions:
 - Key 1 -> type in login for iDRAC
 - Key 2 -> type in login for iLO
-- Key 3 -> a simple lock button that simulates pressing WIN+L
+- Key 3 -> a simple lock button that simulates pressing WIN+L  
 A simple red LED was added just for a visual feedback of the device functioning, this can be omitted completely or swapped for anything else with a cool factor (might add an OLED screen later with company logos when pressing the key).
 
 ![Schematic diagram](/img/circuit.png)
